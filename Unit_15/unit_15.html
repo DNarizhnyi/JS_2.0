@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Unit 15. Set в JavaScript</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Unit 15. Set в JavaScript</h1>
+
+        <section>
+            <p>Task 1</p>
+            <p>Создайте новый Set. Добавьте в него через add элементы. Выведите в консоль. </p>
+            </p>
+            <button class="b-1 button-primary">Show</button>
+            <div class="out-1">
+            </div>
+        </section>
+
+        <section>
+            <p>Task 2</p>
+            <p>Создайте input куда пользователь может вводить элементы и кнопку. По нажатию на кнопку значение из input
+                добавляется в set. Set выводится в консоль.</p>
+            <input type="text" class="i-2">
+            <button class="b-2 button-primary">task 2</button>
+            <div class="out-2">
+            </div>
+        </section>
+
+        <section>
+            <p>Task 3</p>
+            <p>Добавьте к предыдущему заданию кнопку удалить. При нажатии кнопки читаете содержимое input и удаляете его
+                из Set. Если input пустой - выводите ошибку (alert).</p>
+            <input type="text" class="i-3">
+
+            <button class="b-3 button-primary">task 3</button>
+            <button class="b-3-show button-primary">Show massive</button>
+
+            <div class="out-3">
+            </div>
+        </section>
+
+        <section>
+            <p>Task 4</p>
+            <p>Добавьте к предыдущему заданию кнопку проверить. При нажатии кнопки читаете содержимое input и проверяет
+                его наличие в Set. Функция должна возвращать true или false.Действия запускаются при вызове функции t4.
+            </p>
+            <input type="text" class="i-4">
+
+            <button class="b-4 button-primary">task 4</button>
+            <div class="out-4">
+            </div>
+        </section>
+
+        <section>
+            <p>Task 5</p>
+            <p>Выведите размер полученного в результате предыдущих операций Set. Выводить на страницу и возвращать в
+                функции.
+                Действия должны запускаться при вызове функции t5.</p>
+            <button class="b-5 button-primary">task 5</button>
+            <div class="out-5">
+            </div>
+        </section>
+
+        <section>
+            <p>Task 6</p>
+            <p>Есть массив a6 = [3,4,3,2,4,56,1,23]. Напишите функцию, которая возвращает и выводит на страницу
+                количество уникальных элементов в массиве a6. Решение должно использовать set.
+                Действия должны запускаться при вызове функции t6. </p>
+            <button class="b-6 button-primary">task 6</button>
+            <div class="out-6">
+            </div>
+        </section>
+
+        <section>
+            <p>Task 7</p>
+            <p> Создайте input куда пользователь может ввести пароль и кнопку - проверить. Проверяйте с помощью Set,
+                чтобы пользователь использовал в пароле только не повторяющиеся символы. Логика решения - получаем
+                строку из input - и преобразуем ее в массив (arr.split('')). Считаем длину массива. На основе массива
+                создаем Set. Сравниваем размеры массива и Set. Функция должна возвращать true или false. </p>
+            <p>(результат в консоли)</p>
+            <input type="text" class="login" placeholder="login">
+            <input type="text" class="pass" placeholder="password">
+            <button class="b-7 button-primary">Check</button>
+            <div class="out-7">
+            </div>
+        </section>
+
+        <section>
+            <p>Task 8</p>
+            <p> Создайте набор set a8. Напишите функцию, которая принимает set в качестве параметра и четные элементы из
+                набора добавляет в массив a8_res. После завершения операции - выводит a8_res на страницу. Запуск - по
+                нажатию кнопки b-8. </p>
+
+            <button class="b-8 button-primary">task 8</button>
+            <div class="out-8">
+            </div>
+        </section>
+
+        <section>
+            <p>Task 9</p>
+            <p> Создайте набор set a9. Напишите функцию, которая принимает set в качестве параметра присваивает a9_res
+                так, что порядок элементов в a9_res обратный a9. Выведите a9_res на страницу. Действия должны
+                запускаться при вызове функции t9.</p>
+
+            <button class="b-9 button-primary">task 9</button>
+            <div class="out-9">
+            </div>
+        </section>
+
+        <section>
+            <p>Task 10</p>
+            <p> Сложная задача!!! Самая сложная задача за урок. Если ее решите - то массивов вы больше не испугаетесь.
+                Задачу Можно пропустить. Создайте массив элементов a10. Посчитайте, сколько раз встречается каждый из
+                элементов в массиве. Результат присвойте массиву a10_res.
+                Логика решения: создайте на основе массива - набор. Потом запустите перебор набора и внутри цикла
+                перебора запустите еще один цикл - перебираете массив и смотрите совпадения если элемент массива
+                совпадает с элементом набора - то плюсуете счетчик. После прохода внутреннего цикла добавляете в a20_res
+                запись в виде элемент набора - счетчик.
+                a10_res = {
+                "3" : 5,
+                "1" : 1,
+                }
+            </p>
+            <pre>let a10 = [5, 7, 9, 11, 13, 15, 5, 7, 5, 2, 3, 7, 13];</pre>
+
+            <button class="b-10 button-primary">task 10</button>
+            <div class="out-10">
+            </div>
+        </section>
+
+
+        <section>
+            <p>Task 11</p>
+            <p> Эмулируем работу set. Пользователь может ввести значение в i-11. Напишите функцию, которая по нажатию
+                b-11 запускает функцию t11. Функция получает введенное значение и добавляет его в массив a11_res.
+                Добавление происходит если такого значения в массиве нет. После каждой операции выводите a11_res на
+                страницу.
+            </p>
+            <input type="text" class="i-11">
+            <button class="b-11 button-primary">task 11</button>
+            <div class="out-11">
+            </div>
+        </section>
+
+        <section>
+            <p>Task 12</p>
+            <p> Напишите функцию, которая принимает в качестве параметра набор set и преобразует его в массив, результат
+                выводит на страницу и присваивает a12_res. Действия должны запускаться при вызове функции t12.
+            </p>
+
+            <button class="b-12 button-primary">task 12</button>
+            <div class="out-12">
+            </div>
+        </section>
+
+        <section>
+            <p>Task 13</p>
+            <p> Напишите функцию, которая принимает set и выводит его на страницу в указанный элемент. Элемент задавать
+                как второй параметр.
+                Действия должны запускаться при вызове функции t13.
+            </p>
+
+            <button class="b-13 button-primary">task 13</button>
+
+            <div class="out-13">
+            </div>
+        </section>
+
+        <section>
+            <p>Task 14</p>
+            <p>Напишите функцию, которая принимает set и выводит его на страницу в указанный элемент. Элемент задавать
+                как второй параметр. Третий параметр - разделитель.
+                Действия должны запускаться при вызове функции t14.
+                Т.е. ввели в качестве разделителя дефис и вывод на страницу 1-2-3- (без пробелов).
+            </p>
+
+            <button class="b-14 button-primary">task 14</button>
+            <div class="out-14">
+            </div>
+        </section>
+
+        <section>
+            <p>Task 15</p>
+            <p> Дан массив arr15 = [
+                [1,0],
+                [1,0],
+                [2,0]
+                ] . Добавьте вложенные в него массивы в набор. Изучите результат. Результирующий набор
+                a15_res выведите на страницу. Добавление сделайте через цикл.
+                Действия должны запускаться при вызове функции t15. Результат операции запишите в a15_res.
+
+            </p>
+
+            <button class="b-15 button-primary">task 15</button>
+            <div class="out-15">
+            </div>
+        </section>
+
+        <section>
+            <p>Task 16</p>
+            <p> Дан массив a16 = [
+                { Ivan: 1 },
+                { Ivan: 1 },
+                { Ivan: 2 },
+                { Serg: 0 }
+                ]. Добавьте вложенные в него массивы в набор. Изучите результат. Результирующий набор выведите в
+                консоль. Добавление сделайте через цикл.
+                Действия должны запускаться при вызове функции t15.
+                Результат операции запишите в a16_res.
+            </p>
+
+            <button class="b-16 button-primary">task 16</button>
+            <div class="out-16">
+            </div>
+        </section>
+
+        <section>
+            <p>Task 17</p>
+            <p>
+                Создайте строку u17 = 'Primer'. Создайте новый набор с Set(u17). Выведите в консоль. Изучите результат.
+                Действия должны запускаться при вызове функции t17.
+            </p>
+
+            <button class="b-17 button-primary">task 17</button>
+            <div class="out-17">
+            </div>
+        </section>
+
+        <section>
+            <p>Task 18</p>
+            <p> Переберите массив a18 = [5, 7, 9, 11, 13, 15], c помощью цикла for of.
+                Выведите на страницу в виде ключ - значение (разделены дефисом без пробелов). В конце строки - br.
+                Результирующую строку присвойте a18_res.
+                Действия должны запускаться при вызове функции t18.
+            </p>
+            <button class="b-18 button-primary">task 18</button>
+            <div class="out-18">
+            </div>
+        </section>
+
+        <section>
+            <p>Task 19</p>
+            <p> Создайте набор a19 и добавьте в него значения. Выведите на страницу каждый второй по счету элемент
+                набора.
+                Действия должны запускаться при вызове функции t19.
+            </p>
+            <button class="b-19 button-primary">task 19</button>
+            <div class="out-19">
+            </div>
+        </section>
+
+        <section>
+            <p>Task 20</p>
+            <p> Создайте функцию, которая принимает массив и четные по индексу элементы добавляет в набор s20_res в
+                нечетные в набор s21_res. Выводите данные наборы в консоль.
+            </p>
+            <button class="b-20 button-primary">task 20</button>
+            <div class="out-20">
+            </div>
+        </section>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

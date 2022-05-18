@@ -1,0 +1,17 @@
+.container  {
+    width: 100%;
+}
+
+section {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #444;
+}
+
+.out-6 {
+    letter-spacing: 1.2em;
+}
+
+.one {
+    margin-bottom: 5px;
+}

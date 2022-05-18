@@ -1,0 +1,13 @@
+input {
+    display: block;
+    direction: ltr;
+}
+
+html,
+body {
+    font-family: serif;
+}
+
+body {
+    margin: 20px;
+}

@@ -1,0 +1,17 @@
+.container {
+    width: 100%;
+}
+
+section {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #444;
+}
+
+pre {
+    white-space: pre;
+}
+
+.div20 {
+    font-family: 'Courier New', Courier, monospace;
+}

@@ -1,0 +1,159 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Unit 7</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Unit 7. Функции и все о них</h1>
+
+        <section>
+            <p>Task 1</p>
+            <p>Создайте функцию (именнованную), которая при клике на кнопке выводит в консоль ваше имя.</p>
+            <button class="b-1 button-primary">task 1</button>
+            <button class="b-1_clear button-primary">clear</button>
+
+        </section>
+
+        <section>
+            <p>Task 2</p>
+            <p>Создайте функцию (именованную). Функция должна примать один параметр - имя (например Ivan) и выводить имя
+                переданное ей в консоль. Запустите функцию и передайте в качестве имени Sergey.</p>
+            <button class="b-2 button-primary">task 2</button>
+            <input type="text" class="task_2">
+        </section>
+
+        <section>
+            <p>Task 3</p>
+            <p>Создайте именнованную функцию, которая принимает параметр число и выводит его значение умноженное на 10 в
+                консоль. Запустите выполнение функции. Убедитесь, что она работает. Теперь создайте кнопку и добавьте на
+                нее
+                событие onclick которое вызывает данную функцию с параметром. </p>
+            <p>Если вы напишите, подобный синтаксис elem.onclick = myFunc(11), то увидите, что данная функция -
+                выполняется
+                сразу при загрузке страницы! Действительно, ведь мы поставили скобки. Как передать параметр и не
+                запустить
+                функцию сразу? Довольно хитро: </p>
+            <pre>
+        elem.onclick = function(){
+        myFunc(22);
+}       </pre>
+            <p>Т.е. использовать обертку из анонимной функции.</p>
+            <button class="b-3 button-primary">task 3</button>
+            <input type="text" class="task_3">
+        </section>
+
+        <section>
+            <p>Task 4</p>
+            <p>Создайте кнопку и функцию. При нажатии кнопки, функция окрашивает данную кнопку в background: red.</p>
+            <button class="b-4 button-primary">task 4</button>
+
+        </section>
+
+        <section>
+            <p>Task 5</p>
+            <p>Создайте функцию, которая возвращает ваше имя. Имя вводится с input</p>
+            <button class="b-5 button-primary">task 5</button>
+            <input type="text" class="task_5">
+
+        </section>
+
+        <section>
+            <p>Task 6</p>
+            <p>Создайте функцию, которая принимает 2 числа и возвращает большее число из двух, либо любое из них если
+                они равны.</p>
+            <button class="b-6 button-primary">task 6</button>
+            <button class="b-6_clear button-primary">Clear</button>
+
+            <input type="text" class="task_6-1" placeholder="Введите первое число">
+            <input type="text" class="task_6-2" placeholder="Введите второе число">
+            <div class="out-6"></div>
+        </section>
+
+        <section>
+            <p>Task 7</p>
+            <p>Создайте функцию, которая принимает год рождения и возвращает ваш возраст. Текущий год задавать как 2019.
+            </p>
+
+            <button class="b-7 button-primary">task 7</button>
+
+            <input type="text" class="task_7" placeholder="Введите год вашего рождения">
+            <div class="out-7">
+            </div>
+        </section>
+
+        <section>
+            <p>Task 8</p>
+            <p>Создайте функцию, которая возвращает случайное число от 1 до 10. </p>
+
+            <button class="b-8 button-primary">task 8</button>
+
+            <div class="out-8">
+            </div>
+        </section>
+
+        <section>
+            <p>Task 9</p>
+            <p> Создайте функцию, которая возвращает случайное число в указанном диапазоне. Диапазон указывает
+                пользователь с помощью двух переменных, которые передаются функции в качестве параметров.
+                (Вы можете поменять пределы местами, на вывод не повлияет)
+            </p>
+
+            <button class="b-9 button-primary">task 9</button>
+
+            <p></p>
+            <input type="text" class="input-9_min" placeholder="Введите нижний предел (минимум)">
+            <input type="text" class="input-9_max" placeholder="Введите верхний предел (максимум)">
+            <div class="out-9">
+            </div>
+        </section>
+
+        <section>
+            <p>Task 10</p>
+            <p> Создайте функцию, которая возвращает случайный цвет. Напомню - цвет это строка rgb(0..255, 0..255,
+                0..255) - которая содержит 3 числа от нуля до 255 включительно, разделенных запятыми. Т.е. вам нужно три
+                раза создать случайное число от 0 до 255.
+            </p>
+            <p>В данном задании я окрашиваю кнопку</p>
+            <button class="b-10 button-primary">task 10</button>
+            <div class="out-10">
+            </div>
+
+
+        </section>
+
+        <section>
+            <p>Task 11</p>
+            <p> Создайте функцию f11, которая возвращает число 5. Создайте функцию которая принимает 2 параметра и
+                перемножает их между собой. В качестве первого параметра передайте f11().
+            </p>
+
+            <button class="b-11 button-primary">task 11</button>
+            <input type="text" class="input-11" placeholder="Введите второй параметр для функции">
+            <div class="out-11">
+            </div>
+        </section>
+
+        <section>
+            <p>Task 12</p>
+            <p> Создайте функцию toNum, которая принимает 1 параметр - объект input, и возвращает введенное в него
+                значение преобразованное в число.
+            </p>
+
+            <button class="b-12 button-primary">task 11</button>
+            <input type="text" class="input-12" placeholder="Что преобразуем в число?">
+            <div class="out-12">
+            </div>
+        </section>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

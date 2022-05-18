@@ -1,0 +1,27 @@
+.container  {
+    width: 100%;
+}
+
+section {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #444;
+}
+
+pre {
+    white-space: pre;
+}
+
+/* Только для визуализации*/
+.out-9{
+    font-family: monospace;
+}
+
+.out-10{
+    font-family: monospace;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

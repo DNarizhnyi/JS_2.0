@@ -1,0 +1,19 @@
+html, body {
+    font-family: serif;
+}
+body {
+    margin: 20px;
+}
+
+pre {
+    border: 1px solid #c0c0c0;
+    background: #fff;
+    padding: 5px;
+    font-family: monospace;
+}
+
+.css-1 {
+    text-decoration-line: underline;
+    font-size: 20px;
+    color: rgb(38, 155, 9);
+}
